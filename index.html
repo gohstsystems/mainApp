@@ -5,7 +5,7 @@
 
   <title>Home</title>
 
-  <link rel="stylesheet" href="indexCSS.css">
+  <link rel="stylesheet" href="index.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -13,18 +13,46 @@
 </head>
 
 <body>
-  <script src="indexJS.js"></script>
+<script src="index.js"></script>
 
 <div id="headerBarDiv">
+
+<ul id="leftHeaderLinks">
+ <li><a href="homePage.html">Home</a></li>
+ <li><a href="mainGamePage.html">Main Game</a></li>
+ <li><a href="miniGamesPage.html">Mini Games</a></li>
+</ul>
+
+<ul id="rightHeaderLinks">
+ <li><a href="settingsPage.html">Settings</a></li>
+</ul>
 </div>
  
-<div id="primaryContentDiv">
+<div id="bodyDiv">
+
+ <div id="sideNavBarDiv">
+  <center><h3 class="sideNavBarHeading">Mystic Warriors</h3></center>
+  <ul>
+   <li><a href="">About</a></li>
+   <li><a href="">App</a></li>
+   <li><a href="">Source</a></li>  
+  </ul>
+     
+ </div>
+ 
+ <div id="primaryContentDiv">
+  <div class="textSection" style="position: relative;">
+   <center><canvas id="screen0" width="700" height="400" style="position: absolute; left: 0; top: 0; z-index: 0; border:3px solid #143243;"></canvas></center>
+   <center><canvas id="screen1" width="700" height="400" style="position: absolute; left: 0; top: 0; z-index: 1; border:1px solid #1432ff;"></canvas></center>
+  </div> 
+ </div>
+
 </div>
 
 <div id="footerBarDiv">
 </div>
 
-
+<script src="index.js"></script>
 </body>
 </html>
 
